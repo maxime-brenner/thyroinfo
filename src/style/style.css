@@ -1,0 +1,100 @@
+/* Font */
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+    url("../font/poppins/Poppins-Black.ttf") format ("truetype");
+}
+
+body {
+    font-family: "Poppins ", sans-serif;
+    background-color: aliceblue;
+    color: #030303;
+}
+
+header{
+position: relative;
+z-index: 1;
+}
+
+.nav-item{
+    padding: 18px ;
+}
+
+.nav-link:hover{
+    box-shadow: rgba(243, 150, 27, 0.4) -5px 5px, rgba(243, 150, 27, 0.3) -10px 10px, rgba(243, 150, 27, 0.2) -15px 15px, rgba(243, 150, 27, 0.1) -20px 20px, rgba(243, 150, 27, 0.05) -25px 25px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.nav-link{
+    font-size: large;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.catch-line {
+    color: whitesmoke;
+}
+
+.catch-line {
+    background-image: linear-gradient(160deg,#e9b451,#e7aa3a);
+    position: relative;
+    overflow: hidden;
+    position: relative;;
+}
+
+.catch-line::before{
+    content: "";
+    background-image: url("../assets/bubble6.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 0;
+    transition: inherit;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: .1;
+    width: 100%
+}
+
+.inside-container {
+    padding: 30px 30px 50px 50px;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+img.card-img {
+    object-fit: cover;
+    height: 10vw;
+    width: 100%;
+}
+
+img.header-img{
+    object-fit: cover;
+    width: 100%;
+    height: 15vw;
+}
+
+img.brand-img{
+    object-fit: cover;
+    width: 75%;
+    height: 10vw;
+}
+
+.card {
+    height: fit-content;
+    border: none !important;
+    box-shadow: #030303;
+}
