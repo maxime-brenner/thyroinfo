@@ -8,6 +8,7 @@ import { Row,
          CardSubtitle,
          CardText,
          Button } from 'reactstrap';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 
 function Home () {
     return (
@@ -20,7 +21,7 @@ function Home () {
             </section>
             <section className='g-container' >
                 <div className='inside-container'>
-                    <h2>Un titre</h2>
+                    <MenuBookIcon />
                     <h2>Un autre titre</h2>
                 </div>
             </section>            
